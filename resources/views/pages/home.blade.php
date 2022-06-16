@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-   
+    
 	    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -46,6 +46,7 @@ header{
     width: 50vw;
     position: relative;
 }
+
 .vertical{
     height: 50px;
     width: 1px;
@@ -99,7 +100,7 @@ nav ul li:last-child{
 nav ul li:hover{
     background: rgba(255, 255, 255, 0.2);
 }
------
+
 .page{
     width: 60vw;
     position: absolute;
@@ -113,6 +114,7 @@ nav ul li:hover{
     transform: translateX(-50%);
     display: none;
 }
+
 .page span{
     display: block;
     font-size: 26px;
@@ -133,6 +135,9 @@ nav ul li:hover{
     font-size: 15px;
     font-weight: 300;
 }
+
+
+/* media queries */
 
 @media screen and (max-width: 560px){
     nav ul li{
@@ -160,7 +165,7 @@ nav ul li:hover{
 }
 </style>
 </head>
-    <body>  
+    <body>    
         <header>
             <div class = "wrapper">
                 <div class = "vertical"></div>
@@ -174,20 +179,20 @@ nav ul li:hover{
                         <li><a href = "#">About Me</a></li>
                         <li><a href = "#">CS202 Favorite Topic</a></li>
                         <li><a href = "#">Laravel Topic</a></li>
-			            <li><a href = "#">Six Years From Now</a></li>
+			<li><a href = "#">Six Years From Now</a></li>
                         <li><a href = "#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-  <section id="About Me" class="page">
+    <section id="About Me" class="page">
 	<span class ="close-btn">
 		<i class="fas fa-times"></i>
 	</span>
-             <p style="text-align:center"><h2><b>About Me</b> <br><br>"Don't wish for it. Work for it."<br><br>
+             <p><h2><b>About Me</b> <br><br>"Don't wish for it. Work for it."<br><br>
                 I'am Kathleen Victorio Lita, 21 years of age. I'am currently in 3rd-year college taking up Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.  I was a former student at Pasig City Science High School. I'am a hardworking and resposible student that's why I was able to maintain being a consistent Dean's Lister and with a dream of graduating as a Cum Laude. Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.</h2> </p>
-  </section>
+        </section>
   
  <section id="CS202 Favorite Topic" class="page">
 	<span class ="close-btn">
@@ -197,13 +202,13 @@ nav ul li:hover{
                        Modern high‑traffic websites must serve hundreds of thousands, if not millions, of concurrent requests from users <br> or clients and return the correct text, images, video, or application data, all in a fast and reliable manner. To cost‑effectively scale to meet <br> these high volumes, modern computing best practice generally requires adding more servers. It doesn’t need a clock for integration—rather, it <br> utilizes the parity bits to tell the receiver how to translate the data.  It is straightforward, quick, cost-effective, and doesn’t need 2-way communication <br>to 
                        function. Load balancing is the process of distributing network traffic across multiple servers. This ensures no single server bears too much demand. 
                        <br><br> By spreading the work evenly, load balancing improves application responsiveness. It also increases availability of applications and websites for users.<br> Modern applications cannot run without load balancers. Over time, software load balancers have added additional capabilities including application security.</h2>
-  </section>
+        </section>
  
-  <section id="Laravel Topic" class="page">
-	 <span class ="close-btn">
+   <section id="Laravel Topic" class="page">
+	<span class ="close-btn">
 		<i class="fas fa-times"></i>
 	</span>
-                <h2> <b>Laravel Topic: Models</b><br><br><p> <b>Getting Started with Database in Laravel </b></p><p class="content1"> Almost every modern web application interacts with a database.  Laravel makes interacting with databases extremely simple across a <br>variety of supported databases using raw SQL, a fluent query builder, and the Eloquent ORM.
+                <h2> <b>Laravel Topic: Models</b><br><br><p> <b>Getting Started with Database in Laravel </b></p><p> Almost every modern web application interacts with a database.  Laravel makes interacting with databases extremely simple across a <br>variety of supported databases using raw SQL, a fluent query builder, and the Eloquent ORM.
                      Laravel provides first-party support for four databases:<br>
                     
                      MySQL 5.7+ (Version Policy)<br>
@@ -221,24 +226,24 @@ nav ul li:hover{
                         - username & password <br>
                         - port, etc. <br>
                         Each of these configuration values has its own corresponding environment variable. This means that when configuring your database connection information<br> on a production server, you need to manage several environment variables. </h2></p>
-   </section>
+        </section>
 
-   <section id="Six Years From Now" class="page">
-	  <span class ="close-btn">
-		 <i class="fas fa-times"></i>
-	  </span>
+    <section id="Six Years from Now" class="page">
+	<span class ="close-btn">
+		<i class="fas fa-times"></i>
+	</span>
 		<h2><b>Six Years From Now <br><br> </b><p> 
                  Six years from now, I can see myself as a successful programmer and business woman also. Aside from <br>working as a programmer, I also want to build my own company or business. <br> 
              <br>Lastly, I want to be a successful person so that I can provide for the needs and wants of my family.</h2></p>
    </section>
 
    <section id="Contact" class="page">
-	  <span class ="close-btn">
+	<span class ="close-btn">
 		<i class="fas fa-times"></i>
-	  </span> 
-        <h2><b>Contact Details</b> <br><br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i></h2>
-    </section>
- 
+	</span>
+ <h2><b>Contact Details</b> <br><br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i></h2>
+ </section>
+
 <script>
 const links = document.querySelectorAll('ul li');
 const pages = document.querySelectorAll('.page');
