@@ -29,7 +29,15 @@ body{
     font-family: 'Dosis', sans-serif;
     background-color:#FF8BA0;
 }
-
+header{
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -94,15 +102,7 @@ nav ul li:last-child{
 nav ul li:hover{
     background: rgba(255, 255, 255, 0.2);
 }
-header{
-    color: #f0f0f0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-}
+
 
 
 .page{
@@ -141,8 +141,6 @@ header{
 }
 
 
-/* media queries */
-
 @media screen and (max-width: 560px){
     nav ul li{
         width: 70px;
@@ -178,13 +176,13 @@ header{
                     <h2>Kathleen Lita</h2>
                     <p>My Laravel Personal Webpage</p>
                 </div>
-                <div class = "vert-line"></div>
+                <div class = "vertical"></div>
                 <nav>
                     <ul>
                         <li><a href = "#">About Me</a></li>
                         <li><a href = "#">CS202 Favorite Topic</a></li>
                         <li><a href = "#">Laravel Topic</a></li>
-			<li><a href = "#">Six Years From Now</a></li>
+			            <li><a href = "#">Six Years From Now</a></li>
                         <li><a href = "#">Contact</a></li>
                     </ul>
                 </nav>
@@ -233,7 +231,7 @@ header{
                         Each of these configuration values has its own corresponding environment variable. This means that when configuring your database connection information<br> on a production server, you need to manage several environment variables. </h2></p>
         </section>
 
-    <section id="Six Years from Now" class="page">
+    <section id="Six Years From Now" class="page">
 	<span class ="close-btn">
 		<i class="fas fa-times"></i>
 	</span>
@@ -248,6 +246,7 @@ header{
 	</span> 
  <h2><b>Contact Details</b> <br><br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i></h2>
  </section>
+ 
 <script>
 const links = document.querySelectorAll('ul li');
 const pages = document.querySelectorAll('.page');
