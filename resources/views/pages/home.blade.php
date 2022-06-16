@@ -196,7 +196,7 @@ header{
 		<i class="fas fa-times"></i>
 	</span>
              <p style="text-align:center"><h2><b>About Me</b> <br><br>"Don't wish for it. Work for it."<br><br>
-                I'am Kathleen Victorio Lita, 21 years of age. I'am currently in 3rd-year college taking up Bachelor of <br> Science in Computer Science at Pamantasan ng Lungsod ng Pasig.  I was a former student at Pasig City Science <br> High School. I'am a hardworking and resposible student that's why I was able to maintain being a consistent Dean's Lister<br> and with a dream of graduating as a Cum Laude. Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.</h2> </p>
+                I'am Kathleen Victorio Lita, 21 years of age. I'am currently in 3rd-year college taking up Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.  I was a former student at Pasig City Science High School. I'am a hardworking and resposible student that's why I was able to maintain being a consistent Dean's Lister and with a dream of graduating as a Cum Laude. Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.</h2> </p>
         </section>
   
  <section id="CS202 Favorite Topic" class="page">
@@ -242,10 +242,10 @@ header{
              <br>Lastly, I want to be a successful person so that I can provide for the needs and wants of my family.</h2></p>
    </section>
 
-   <section id="Six Years from Now" class="page">
+   <section id="Contact" class="page">
 	<span class ="close-btn">
 		<i class="fas fa-times"></i>
-	</span>
+	</span> 
  <h2><b>Contact Details</b> <br><br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i></h2>
  </section>
 <script>
