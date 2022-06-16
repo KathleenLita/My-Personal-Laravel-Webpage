@@ -3,212 +3,184 @@
 @section('content')
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-	    <title>Kathleen Lita</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    
-	    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<head>
+	<title>Kathleen Lita</title>
+	
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  	
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
-    
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
+	font-family: 'Dosis', sans-serif;
+	box-sizing: border-box;
+	background-color:#FE65AC;
 }
-body{
-    font-family: 'Dosis', sans-serif;
-    background-color:#FF8BA0;
-}
-header{
-    color: #f0f0f0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-}
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50vw;
-    position: relative;
+.label{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
 }
 
-.vertical{
-    height: 50px;
-    width: 1px;
-    background: #f0f0f0;
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+	
 }
-.text{
-    padding: 50px 0;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
-    font-family: 'Dosis', sans-serif;   
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
 }
-.text h2{
-    text-transform: uppercase;
-    font-size: 80px;
-    padding-bottom: 10px;
-   font-family: 'Dosis', sans-serif;
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+	font-family: 'Dancing Script', cursive;
 }
-.text p{
-    padding-top: 10px;
-    font-weight: 300;
-    line-height: 1.8;
-    font-family: 'Dancing Script', cursive;
-    font-size:50px ;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-}
-nav ul a{
-    text-decoration-color: none;
-    color: #f0f0f0;
-    font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-nav{
-    border: 1px solid #f0f0f0;
-    border-radius: 5px;
-}
-nav ul li{
-    display: block;
-    padding: 12px 0;
-    width: 120px;
-    border-right: 1px solid #f0f0f0;
-    transition: background 0.5s ease;
-}
-nav ul li:last-child{
-    border: none;
-}
-nav ul li:hover{
-    background: rgba(255, 255, 255, 0.2);
+h4{
+	color: #fcfc;
+	letter-spacing: 2px;
+	font-size: 20px;
 }
 
-.page{
-    width: 60vw;
-    position: absolute;
-    margin: 38px auto;
-    background-color:#FE65AC;
-    color: #fff;
-    line-height: 1.7;
-    padding: 35px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #feb1b7;
 }
 
-.page span{
-    display: block;
-    font-size: 26px;
-    text-align: right;
+.about-text{
+	width: 550px;
 }
-.page span i{
-    cursor: pointer;
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-.page .title{
-    font-weight: 500;
-    text-transform: uppercase;
-    border-bottom: 2px solid #fff;
-    width: 120px;
-    margin: 20px 0;
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
 }
-.page p{
-    padding: 15px 0;
-    font-size: 15px;
-    font-weight: 300;
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+.CS202{
+	background-color:#febecc;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 50px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
 }
 
 
-/* media queries */
-
-@media screen and (max-width: 560px){
-    nav ul li{
-        width: 70px;
-        padding: 7px 0;
-    }
-    nav ul a{
-        font-size: 14px;
-    }
+.laravel{
+	background-color:#f99dbc;
+	width: 100%;
+	padding: 100px 0px;
+	text-align:center;
 }
-
-@media screen and (max-width: 768px){
-    .wrapper{
-        width: 90vw;
-    }
-    .page{
-        width: 90vw;
-    }
+.title1 h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
 }
-
-@media screen and (max-width: 1170px){
-    .page{
-        width: 80vw;
-    }
+.title1 p{
+	font-size: 30px;
+	text-align: center;
+}
+.contact{
+	background-color:#fec206;
+	width: 100%;
+        height:10px;
+	padding: 100px 0px;
+	text-align:center;
+}
+.six{
+font-family: 'Dosis', sans-serif;
+color: white;
+font-size: 20px;
 }
 </style>
 </head>
-    <body>    
-        <header>
-            <div class = "wrapper">
-                <div class = "vertical"></div>
-                <div class = "text">
-                    <h2>Kathleen Lita</h2>
-                    <p>My Laravel Personal Webpage</p>
-                </div>
-                <div class = "vertical"></div>
-                <nav>
-                    <ul>
-                        <li><a href = "#">About Me</a></li>
-                        <li><a href = "#">CS202 Favorite Topic</a></li>
-                        <li><a href = "#">Laravel Topic</a></li>
-			<li><a href = "#">Six Years From Now</a></li>
-                        <li><a href = "#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body>
 
-    <section id="About Me" class="page">
-	<span class ="close-btn">
-		<i class="fas fa-times"></i>
-	</span>
-             <p><h2><b>About Me</b> <br><br>"Don't wish for it. Work for it."<br><br>
-                I'am Kathleen Victorio Lita, 21 years of age. I'am currently in 3rd-year college taking up Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.  I was a former student at Pasig City Science High School. I'am a hardworking and resposible student that's why I was able to maintain being a consistent Dean's Lister and with a dream of graduating as a Cum Laude. Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.</h2> </p>
-        </section>
-  
- <section id="CS202 Favorite Topic" class="page">
-	<span class ="close-btn">
-		<i class="fas fa-times"></i>
-	</span>
-             <h2><b>Load Balancing</b> <br><br><p> It refers to efficiently distributing incoming network traffic across a group of backend servers, also known as a server farm or server pool. <br> As an organization meets demand for its applications, the load balancer decides which servers can handle that traffic. This maintains a <br> good user experience.
+	<div class="label">
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Kathleen <span>Lita</span></h1>
+			<h3>And this is my personal laravel webpage.</h3><br><br><br>
+			<p class="six"> 
+                 Six years from now, I can see myself as a successful programmer and business woman also. Aside from <br>working as a programmer, I also want to build my own company or business. <br> 
+             <br>Lastly, I want to be a successful person so that I can provide for the needs and wants of my family.</h2></p>
+			</div>
+		</div>
+
+	<section class="about">
+		<div class="main">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<p>"Don't wish for it. Work for it."<br><br>
+                I'am Kathleen Victorio Lita, 21 years of age. I'am currently in 3rd-year college taking up Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.  I was a former student at Pasig City Science High School. I'am a hardworking and resposible student that's why I was able to maintain being a consistent Dean's Lister and with a dream of graduating as a Cum Laude. Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Pasig.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="CS202">
+		<div class="title">
+			<h2>CS202 Favorite Lesson</h2>
+			<h2>Load Balancing</h2>
+		</div>
+		<div class="box">			
+					<p> It refers to efficiently distributing incoming network traffic across a group of backend servers, also known as a server farm or server pool. <br> As an organization meets demand for its applications, the load balancer decides which servers can handle that traffic. This maintains a <br> good user experience.
                        Modern high‑traffic websites must serve hundreds of thousands, if not millions, of concurrent requests from users <br> or clients and return the correct text, images, video, or application data, all in a fast and reliable manner. To cost‑effectively scale to meet <br> these high volumes, modern computing best practice generally requires adding more servers. It doesn’t need a clock for integration—rather, it <br> utilizes the parity bits to tell the receiver how to translate the data.  It is straightforward, quick, cost-effective, and doesn’t need 2-way communication <br>to 
                        function. Load balancing is the process of distributing network traffic across multiple servers. This ensures no single server bears too much demand. 
-                       <br><br> By spreading the work evenly, load balancing improves application responsiveness. It also increases availability of applications and websites for users.<br> Modern applications cannot run without load balancers. Over time, software load balancers have added additional capabilities including application security.</h2>
-        </section>
- 
-   <section id="Laravel Topic" class="page">
-	<span class ="close-btn">
-		<i class="fas fa-times"></i>
-	</span>
-                <h2> <b>Laravel Topic: Models</b><br><br><p> <b>Getting Started with Database in Laravel </b></p><p> Almost every modern web application interacts with a database.  Laravel makes interacting with databases extremely simple across a <br>variety of supported databases using raw SQL, a fluent query builder, and the Eloquent ORM.
+                       <br><br> By spreading the work evenly, load balancing improves application responsiveness. It also increases availability of applications and websites for users.<br> Modern applications cannot run without load balancers. Over time, software load balancers have added additional capabilities including application security</p>
+				</div>
+			
+		</div>
+
+	<section class="laravel">
+		<div class="title1">
+				<h2>Laravel Topic: Models</h2>
+</div>
+				<p><b>Getting Started with Database in Laravel </b></p><p> Almost every modern web application interacts with a database.  Laravel makes interacting with databases extremely simple across a <br>variety of supported databases using raw SQL, a fluent query builder, and the Eloquent ORM.
                      Laravel provides first-party support for four databases:<br>
                     
                      MySQL 5.7+ (Version Policy)<br>
@@ -216,59 +188,30 @@ nav ul li:hover{
                      SQLite 3.8.8+<br>
                      SQL Server 2017+ (Version Policy)
 
-                    <br><p class="sub"> <b>Database Configuration</b></p><p class="content1">The configuration for Laravel's database services is located in your application's config/database.php configuration file. 
+                    <br><p> <b>Database Configuration</b></p><p class="content1">The configuration for Laravel's database services is located in your application's config/database.php configuration file. 
                         In this file, you may <br>define all of your database connections, as well as specify which connection should be used by default. 
                         Most of the configuration options within this file <br>are driven by  the values of your application's environment variables. 
 
-                    <br><p class="sub"> <b>DB Configuration Using URLs</b></p><p class="content1">Typically, database connections are configured using multiple configuration values <br>
+                    <br><p> <b>DB Configuration Using URLs</b></p><p class="content1">Typically, database connections are configured using multiple configuration values <br>
                         - host <br>
                         - database<br>
                         - username & password <br>
                         - port, etc. <br>
-                        Each of these configuration values has its own corresponding environment variable. This means that when configuring your database connection information<br> on a production server, you need to manage several environment variables. </h2></p>
-        </section>
-
-    <section id="Six Years from Now" class="page">
-	<span class ="close-btn">
-		<i class="fas fa-times"></i>
-	</span>
-		<h2><b>Six Years From Now <br><br> </b><p> 
-                 Six years from now, I can see myself as a successful programmer and business woman also. Aside from <br>working as a programmer, I also want to build my own company or business. <br> 
-             <br>Lastly, I want to be a successful person so that I can provide for the needs and wants of my family.</h2></p>
-   </section>
-
-   <section id="Contact" class="page">
-	<span class ="close-btn">
-		<i class="fas fa-times"></i>
-	</span>
- <h2><b>Contact Details</b> <br><br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i></h2>
- </section>
-
-<script>
-const links = document.querySelectorAll('ul li');
-const pages = document.querySelectorAll('.page');
-const allBtns = document.querySelectorAll('.close-btn');
-
-let selectedPageBtn = "";
-for(let i = 0; i < links.length; i++){
-    links[i].addEventListener('click', function(event){
-        event.preventDefault();
-        for(let i = 0; i < pages.length; i++){
-            pages[i].style.display = "none";
-        }
-        pages[i].style.display = "block";
-        selectedPageBtn = i;
-        document.querySelector('header').style.filter = "blur(2px)";
-    });
-}
-
-for(let i = 0; i < allBtns.length; i++){
-    allBtns[i].addEventListener('click', function(){
-        allBtns[i].parentElement.style.display = "none";
-        document.querySelector('header').style.filter = "blur(0px)";
-    });
-}
-</script>
+                        Each of these configuration values has its own corresponding environment variable. This means that when configuring your database connection information<br> on a production server, you need to manage several environment variables.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="about">
+		<div class="main">
+			<div class="about-text">
+				<h2>Contact Details</h2>
+				
+              <br> <i class="bi bi-envelope"> Email: lita_kathleen@plpasig.edu.ph </i><br><i class="bi bi-facebook"> Facebook: https://www.facebook.com/litacathleen13 <br> <i class="bi bi-instagram"> Instagram: @kathleen.0513 <br> <i class="bi bi-twitter">Twitter: @kathleen_lita</i> </i></i></i>
+			</div>
+		</div>
+	</section>
+		
 </body>
 </html>
 @stop
