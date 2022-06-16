@@ -6,9 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kathleen Lita</title>
+        
+	<title>Kathleen Lita</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    
+	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -25,15 +29,7 @@ body{
     font-family: 'Dosis', sans-serif;
     background-color:#FF8BA0;
 }
-header{
-    color: #f0f0f0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -44,7 +40,7 @@ header{
     position: relative;
 }
 
-.vert-line{
+.vertical{
     height: 50px;
     width: 1px;
     background: #f0f0f0;
@@ -98,9 +94,16 @@ nav ul li:last-child{
 nav ul li:hover{
     background: rgba(255, 255, 255, 0.2);
 }
+header{
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
 
-
-/***************/
 
 .page{
     width: 60vw;
@@ -131,60 +134,12 @@ nav ul li:hover{
     width: 120px;
     margin: 20px 0;
 }
-img{
-    width: 100%;
-    display: block;
-}
 .page p{
     padding: 15px 0;
     font-size: 15px;
     font-weight: 300;
 }
-article{
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #000;
-    background: #fff;
-    margin: 25px 0;
-}
-#about h3{
-    text-align: center;
-    padding: 5px 0;
-}
-#about .italic{
-    font-style: italic;
-    font-weight: bold;
-}
-form{
-    margin: 30px 0;
-}
-form label, form input, form textarea{
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    margin: 10px 0;
-}
-form input, form textarea{
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid #000;
-    outline: none;
-}
-form input[type = "submit"]{
-    width: 120px;
-    margin: 0 auto;
-    background: #000;
-    color: #fff;
-    border: 1px solid #fff;
-    margin-top: 50px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-form input[type = "submit"]:hover{
-    opacity: 0.5;
-}
+
 
 /* media queries */
 
@@ -218,7 +173,7 @@ form input[type = "submit"]:hover{
         
         <header>
             <div class = "wrapper">
-                <div class = "vert-line"></div>
+                <div class = "vertical"></div>
                 <div class = "text">
                     <h2>Kathleen Lita</h2>
                     <p>My Laravel Personal Webpage</p>
@@ -318,6 +273,6 @@ for(let i = 0; i < allBtns.length; i++){
     });
 }
 </script>
-</body></html>
-
+</body>
+</html>
 @stop
